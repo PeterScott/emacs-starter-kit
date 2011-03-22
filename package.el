@@ -206,7 +206,7 @@ If VERSION is a string, only that version is ever loaded.
  Hence, the package is \"held\" at that version.
 If VERSION is nil, the package is not loaded (it is \"disabled\")."
   :type '(repeat symbol)
-  :risky t
+;  :risky t
   :group 'package
   :version "24.1")
 
@@ -224,7 +224,7 @@ Each element has the form (ID . URL), where ID is an identifier
 string for an archive and URL is a http: URL (a string)."
   :type '(alist :key-type (string :tag "Archive name")
                 :value-type (string :tag "Archive URL"))
-  :risky t
+;  :risky t
   :group 'package
   :version "24.1")
 
@@ -251,7 +251,7 @@ The directory name should be absolute.
 Apart from this directory, Emacs also looks for system-wide
 packages in `package-directory-list'."
   :type 'directory
-  :risky t
+;  :risky t
   :group 'package
   :version "24.1")
 
@@ -269,7 +269,7 @@ Each directory name should be absolute.
 These directories contain packages intended for system-wide; in
 contrast, `package-user-dir' contains packages for personal use."
   :type '(repeat directory)
-  :risky t
+;  :risky t
   :group 'package
   :version "24.1")
 
