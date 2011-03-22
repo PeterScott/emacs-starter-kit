@@ -14,3 +14,8 @@
             (local-set-key (kbd "C-c H") 'hs-hide-all)
             (local-set-key (kbd "C-c S") 'hs-show-all)))
 
+(setq yas/root-directory "~/.emacs.d/snippets/")
+(yas/load-directory yas/root-directory)
+(add-hook 'org-mode-hook
+          (lambda ()
+            (yas/load-directory yas/root-directory)))
