@@ -18,4 +18,11 @@
 (yas/load-directory yas/root-directory)
 (add-hook 'org-mode-hook
           (lambda ()
-            (yas/load-directory yas/root-directory)))
+            (yas/load-directory yas/root-directory)
+            (auto-fill-mode 1)))
+(add-hook 'latex-mode-hook
+          (lambda ()
+            (auto-fill-mode 0)))
+
+(load "color-theme-solarized")
+(color-theme-solarized-light)
