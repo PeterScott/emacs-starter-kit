@@ -24,5 +24,4 @@
           (lambda ()
             (auto-fill-mode 0)))
 
-(load "color-theme-solarized")
-(color-theme-solarized-light)
+(color-theme-zenburn)
